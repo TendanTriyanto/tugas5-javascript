@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Produk Toko Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Manajemen Produk Toko Online</h1>
+
+        <!-- Form Tambah Produk -->
+        <div class="form-card">
+            <h3>Tambah Produk Baru</h3>
+            <form id="productForm">
+                <input type="number" id="idProduk" placeholder="ID Produk (contoh: 6)" required>
+                <input type="text" id="namaProduk" placeholder="Nama Produk" required>
+                <input type="number" id="hargaProduk" placeholder="Harga Produk (Rp)" required>
+                <button type="submit">Tambah Produk</button>
+            </form>
+        </div>
+
+        <!-- Daftar Produk -->
+        <div class="list-card">
+            <h3>Daftar Produk</h3>
+            <div id="productContainer" class="product-grid">
+                <!-- Produk akan dimuat secara dinamis lewat JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
